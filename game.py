@@ -90,7 +90,7 @@ def start_game(event):
                 root.update()
 
 # Initial text in screen (x,y), and Start Button
-root.bind_all("<Return>", start_game)
-canvas.create_text(250, 250, text="Press Enter to start Game!!", fill="red", font="Robus")
+root.bind_all("<w>", start_game)
+canvas.create_text(250, 250, text="Press w to start Game!!", fill="red", font="Robus")
 root.mainloop()
         
