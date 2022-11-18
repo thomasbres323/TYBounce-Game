@@ -3,6 +3,7 @@ from tkinter import *
 root = Tk()
 # Title of the game
 root.title("ronaldo's last dance")
+
 root.geometry("500x670")
 root.resizable(0, 0)
 root.wm_attributes("-topmost", 1)
@@ -15,6 +16,7 @@ canvas.create_image( -90, 30, image = coverImage, anchor = "nw")
 file1 = open("highscore.txt","r+")
 highscore = str(file1.read())
 file1.close()
-score = Label(height=50, width=80, text="Score: 00\n\n Highscore: " + highscore, font="Consolas 14 bold")
+score = Label(height=50, width=80, text="Score: 00\n\n hint: always keep moving \n\n Highscore: " + highscore, font="Consolas 14 bold")
+
 score.pack(side="right")
 root.update()

@@ -10,7 +10,7 @@ class Paddle:
         self.canvas.bind_all("<Left>", self.turn_left)
         self.canvas.bind_all("<Right>", self.turn_right)
         # TODO Pause the game, HINT: something similar as the line above can be done.
-        
+        self.canvas.bind_all("<Up>", self.pauser)
         
 
     def draw(self):

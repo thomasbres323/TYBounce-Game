@@ -89,6 +89,7 @@ def start_game(event):
                 root.update_idletasks()
                 root.update()
 
+
 # Initial text in screen (x,y), and Start Button
 root.bind_all("<w>", start_game)
 canvas.create_text(250, 250, text="Press w to start Game!!", fill="red", font="Robus")
