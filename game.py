@@ -21,7 +21,7 @@ def start_game(event):
         file1 = open("highscore.txt","r+")
         highscore = str(file1.read())
         file1.close()
-        score.configure(text="Score: 00\n\nHighscore: " + highscore)
+        score.configure(text="Score: 00\n\n press up to pause game:\n\n Highscore: " + highscore)
         canvas.delete("all")
         BALL_COLOR = ["white","black"]
         BRICK_COLOR = ["blue","yellow"]
